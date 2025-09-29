@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privacy Policy - James Douglas UAE</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- AOS CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <style>
+        .policy-content {
+            background: #fff;
+            border-radius: 10px;
+            /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); */
+            padding: 3rem;
+            margin: 2rem 0;
+        }
+        
+        .policy-section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .policy-section h2 {
+            color: var(--jd-primary-dark);
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .policy-section h3 {
+            color: var(--jd-primary-light);
+            font-size: 1.3rem;
+            margin: 1.8rem 0 1rem;
+            font-weight: 600;
+        }
+        
+        .policy-section p, .policy-section ul {
+            color: var(--jd-text-muted);
+            line-height: 1.8;
+            margin-bottom: 1.2rem;
+        }
+        
+        .policy-section ul {
+            padding-left: 1.5rem;
+        }
+        
+        .policy-section li {
+            margin-bottom: 0.8rem;
+        }
+        
+        @media (max-width: 768px) {
+            .policy-content {
+                padding: 1.5rem;
+                margin: 1rem 0;
+            }
+            
+            .policy-section h2 {
+                font-size: 1.5rem;
+            }
+            
+            .policy-section h3 {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+
+    <style>
+        .table .row {
+            display: grid;
+            grid-template-columns: 1fr 4fr;
+        }
+
+        .table .col {
+            border: 1px solid gray;
+            padding: 12px;
+        }
+
+        h1.group-title {
+            font-size: 22px;
+        }
+
+        @media screen and (max-width: 720px) {
+            .privacy-policy-section .row {
+                display: block;
+            }
+            h1.group-title {
+                font-size: 16px;
+                font-weight: bold;
+                line-height: 1.5;
+            }
+        }
+    </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3" id="mainNavbar">
+        <div class="container-fluid">
+            <a class="navbar-brand d-flex align-items-center" href="./index.html">
+                <img src="./assets/images/JD-logo.png" alt="James Douglas Logo" height="44" class="me-2" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link d-flex align-items-center" href="#" id="servicesDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Verticals <i class="bi bi-chevron-down ms-1"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+                            <li><a class="dropdown-item" href="./services/banking-financial-services.html">Banking &
+                                    Financial Services</a></li>
+                            <li><a class="dropdown-item"
+                                    href="./services/family-business-private-enterprise.html">Family
+                                    Business & Private Enterprise</a></li>
+                            <li><a class="dropdown-item"
+                                    href="./services/nationalization-emiratization-saudization.html">Nationalization/Emiratization/Saudization</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./services/technology-digital.html">Technology &
+                                    Digital</a></li>
+                            <li><a class="dropdown-item" href="./services/industrial-logistics.html">Industrial
+                                    Logistics</a></li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <a class="nav-link" href="./company.html">For Company</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="./leaders.html">For Leaders</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about-us.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./insights-hub.html">Insights</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./career.html">Career</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact-us.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    
+     <!-- Sentinel (used to detect when the original navbar leaves the viewport) -->
+    <div id="navSentinel" aria-hidden="true"></div>
+
+    <!-- Sticky clone will be injected here by JS -->
+    <div id="stickyNavbarContainer" aria-hidden="true"></div>
+
+    <!-- Banner -->
+    <section class="banner" id="privacy-banner" style="height: 40vh; min-height: 300px;">
+        <div class="banner-overlay" style="width: 100%;">
+            <div class="banner-content">
+                <h1>Privacy Policy</h1>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+   <div class="privacy-policy-section">
+            <div class="container pt-4">
+                <div class="section-header">
+                    <!-- <h1 class="section-header-title">Privacy Policy</h1> -->
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="group">
+                            <h1 class="group-title">
+                                Who are we?
+                            </h1>
+                            <p class="group-description">
+                                We are a global partnership of independently-owned executive search firms.
+                            </p>
+                        </div>
+                        <div class="group">
+                            <h1 class="group-title">
+                                What does this Policy cover?
+                            </h1>
+                            <p class="group-description">
+                                This policy:
+                            </p>
+                            <p class="group-description">
+                                describes the types of personal data that we collect explains why and how we collect
+                                personal
+                                data explains how we use that personal data sets out our legal basis for using the
+                                personal data
+                                that we collect explains how long we keep your personal data explains who we share your
+                                personal
+                                data with, on what basis, when we do so, and why explains what happens if you refuse to
+                                provide
+                                the personal data requested explains your rights and choices under all applicable data
+                                protection legislation, including the GDPR in the EEA, with regard to the processing of
+                                your
+                                personal data explains how we may contact you explains how you can contact us
+
+                            </p>
+                        </div>
+                        <div class="group">
+                            <h1 class="group-title">
+                                Where do we collect personal data about you from?
+                            </h1>
+                            <p class="group-description">
+                                We collect personal data from about you from various different sources:
+                            </p>
+                            <p class="group-description">
+                                Directly from you. This is information you provide while searching for a new position
+                                and/or
+                                during the various stages of the recruitment stages process
+                            </p>
+                            <p class="group-description">
+                                Through publicly available sources. We use the following public sources:
+                            </p>
+                            <p class="group-description">
+                                Internet search engines such as Google From an agent/third party acting on your behalf.
+                                e.g.
+                                Outplacement Company. By reference or word of mouth. For example, you may be recommended
+                                by a
+                                former colleague or a friend.
+                            </p>
+                        </div>
+                        <div class="group">
+                            <h1 class="group-title">
+                                How long do we keep your personal data for?
+                            </h1>
+                            <p class="group-description">
+                                Our policy for holding your personal data is determined according to the type of record
+                                we hold:
+                                Candidate data: Up to six years Client contact details: Up to six years
+                            </p>
+                        </div>
+
+                        <div class="group">
+                            <h1 class="group-title">
+                                What legal basis do we have for using your information?
+                            </h1>
+                            <p class="group-description">
+                                For prospective candidates, as well as for referees and clients, our processing is
+                                necessary for
+                                our legitimate interests in that we need the information in order to be able to assess
+                                suitability for potential roles, to find potential candidates and to contact clients and
+                                referees.
+                                If you are shortlisted as a candidate, then this may involve the processing of more
+                                detailed
+                                personal data including sensitive data such as health information that you or others
+                                provide
+                                about you. In that case we always ask for your consent before undertaking such
+                                processing.
+                                For clients, we may also rely on our processing being necessary to perform a contract
+                                for you,
+                                for example in contacting you.
+                            </p>
+                        </div>
+                        <div class="group">
+                            <h1 class="group-title">
+                                Do we make automated decisions concerning you?
+                            </h1>
+                            <p class="group-description">
+                                No, we do not carry out automated profiling.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="group">
+                            <h1 class="group-title">
+                                What do we do?
+                            </h1>
+                            <p class="group-description">
+                                Member firms provide executive search services to clients looking to recruit senior
+                                executives
+                                for their businesses. Member firms also provide leadership consulting services to
+                                clients.
+                            </p>
+                        </div>
+                        <div class="group">
+                            <h1 class="group-title">
+                                What personal data do we collect about you?
+                            </h1>
+                            <p class="group-description">
+                                We collect the information necessary in order that we may be able to assess your
+                                suitability as
+                                a potential candidate when conducting executive search assignments and further
+                                information
+                                needed to assess your eligibility through the different stages of the search process.
+                                The type
+                                of information we collect includes details of your career history, employment, your CV,
+                                educational records, identification documents, and references.
+                                We may also collect sensitive personal data about you in certain specific circumstances.
+                                We only
+                                collect sensitive personal data from you, and further process this data, where you have
+                                given
+                                your explicit consent.
+
+                            </p>
+                        </div>
+                        <div class="group">
+                            <h1 class="group-title">
+                                What personal data do we collect about you?
+                            </h1>
+                            <p class="group-description">
+                                We use your personal data to evaluate whether the specific role we are handling in our
+                                executive
+                                search assignment could be one that would match your skills, experience and aspirations.
+                                We will
+                                initially collect basic information on you such as contact details, job role and
+                                experience.
+                                This basic information may then be passed on to the client who has engaged us. If you’re
+                                your
+                                skills and experience suggest that you may be a good fit for the role, then we will
+                                contact you
+                                to invite you for interview. At that stage we will collect further information from you.
+                                and
+                                chosen by the client and go through to the next stage we will then be collecting more
+                                information from you at the interview (or equivalent) stage and onwards in that manner.
+                            </p>
+                        </div>
+                        <div class="group">
+                            <h1 class="group-title">
+                                Who do we share your personal data with?
+                            </h1>
+                            <p class="group-description">
+                                Your personal data may be shared with the client who has engaged us to assist in the
+                                search to
+                                fill a particular role. This is the search that we will contact you about, to see if the
+                                role
+                                matches your skills, experience and aspirations. We may also conduct checks on you to
+                                verify the
+                                information you have provided.
+                            </p>
+                        </div>
+                        <div class="group">
+                            <h1 class="group-title">
+                                What happens if you do not provide us with the information we request or ask that we
+                                stop
+                                processing your information?
+                            </h1>
+                            <p class="group-description">
+                                If you do not provide the personal data necessary or withdraw your consent for the
+                                processing of
+                                your personal data, we may not be able to consider you as a porspective candidate for
+                                any
+                                current or future executive search asignments that we may be handling.
+                            </p>
+                        </div>
+                        <div class="group">
+                            <h1 class="group-title">
+                                Do we transfer your data outside the EEA?
+                            </h1>
+                            <p class="group-description">
+                                To better match your profile with current opportunities we may transfer your personal
+                                data to
+                                clients in countries outside the EEA. These countries privacy laws may be different from
+                                those
+                                in your home country. Where we transfer data to a country which has not been deemed to
+                                provide
+                                adequate data protection standards we always have security measures and approved model
+                                clauses
+                                in place to protect your personal data. To find out more about how we safeguard your
+                                information
+                                as related to transfers contact the Data Protection Lead for the EMA Partners office in
+                                your
+                                country.
+                            </p>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="group">
+                    <h1 class="group-title">
+                        What rights do you have in relation to the data we hold on you?
+                    </h1>
+                    <p class="group-description">
+                        By law, you have a number of rights when it comes to your personal data. Further information and
+                        advice about your rights can be obtained from the data protection regulator in your country.
+                    </p>
+                </div>
+
+                <!-- table wrapper start -->
+                <div class="table-wrapper">
+                    <div class="table">
+                        <div class="row">
+                            <div class="col">Rights</div>
+                            <div class="col">What Does this mean?</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">1. The right to be informed</div>
+                            <div class="col">You have the right to be provided with clear, transparent and easily
+                                understandable information about how we use your information and your rights. This is
+                                why we
+                                provide you with the information in this Policy.</div>
+                        </div>
+                        <div class="row">
+                            <div class="col">2. The right of access</div>
+                            <div class="col">You have the right to obtain access to your information (if we are
+                                processing
+                                it), and certain other information (similar to that provided in this Privacy Policy).
+                                This is so that you are aware that we are processing your data and so that you can check
+                                that we are using your information in accordance with data protection law.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                3. The right to rectification
+                            </div>
+                            <div class="col">
+                                You are entitled to have your information corrected if it is inaccurate or incomplete.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                4. The right to erasure
+                            </div>
+                            <div class="col">
+                                Also known as ‘the right to be forgotten’. In simple terms, this enables you to request
+                                the
+                                deletion or removal of your information where there’s no compelling reason for us to
+                                keep
+                                using it. This is not a general right to erasure; there are exceptions.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                5. The right to restrict processing
+                            </div>
+                            <div class="col">
+                                You have rights to ‘block’ or suppress further use of your information. When processing
+                                is
+                                restricted, we can still store your information, but may not use it further. We keep
+                                lists
+                                of people who have asked for further use of their information to be ‘blocked’ to make
+                                sure
+                                the restriction is respected in future.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                6. The right to data portability
+                            </div>
+                            <div class="col">
+                                You have rights to obtain and reuse your personal data for your own purposes across
+                                different services. For example, if you decide to switch to a new provider, this enables
+                                you
+                                to move, copy or transfer your information easily between our IT systems and theirs
+                                safely
+                                and securely, without affecting its usability.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                7. The right to object to processing
+                            </div>
+                            <div class="col">
+                                You have the right to object to certain types of processing, including processing for
+                                direct
+                                marketing (i.e. if you no longer want to be contacted with potential opportunities).
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                8. The right to lodge a complaint
+                            </div>
+                            <div class="col">
+                                You have the right to lodge a complaint about the way we handle or process your personal
+                                data with your national data protection regulator.
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                9. The right to withdraw consent
+                            </div>
+                            <div class="col">
+                                If you have given your consent to anything we do with your personal data, you have the
+                                right
+                                to withdraw your consent at any time (although if you do so, it does not mean that
+                                anything
+                                we have done with your personal data with your consent up to that point is unlawful).
+                                This
+                                includes your right to withdraw consent to us using your personal data for marketing
+                                purposes.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- table wrapper end -->
+
+                <div class="group">
+                    <p class="group-description">
+                    </p><div class="group">
+
+                        <p class="group-description">
+                            We usually act on requests and provide information free of charge, but may charge a
+                            reasonable fee to cover our administrative costs of providing the information for:
+                        </p><ul>
+                            <li>baseless or excessive/repeated requests, or</li>
+                            <li> further copies of the same information.</li>
+                        </ul>
+                        Alternatively, we may be entitled to refuse to act on the request.
+                        <br>Please consider your request responsibly before submitting it. We’ll respond as soon as we
+                        can. Generally, this will be within one month from when we receive your request but, if the
+                        request is going to take longer to deal with, we’ll come back to you and let you know.
+
+                        <p></p>
+                    </div>
+                    <p></p>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="group">
+                            <p class="group-description">
+                            </p><div class="group">
+                                <h1 class="group-title">
+                                    How will we contact you?
+                                </h1>
+                                <p class="group-description">
+                                    We may contact you by phone, email or via the messaging facility on social
+                                    networking sites. If you prefer a particular contact means over another please just
+                                    let us know.
+                                </p>
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="group">
+                            <p class="group-description">
+                            </p><div class="group">
+                                <h1 class="group-title">
+                                    How can you contact us?
+                                </h1>
+                                <p class="group-description">
+                                    If you are unhappy with how we’ve handled your information or have further questions
+                                    on the
+                                    processing of your personal data, contact our Data Protection Lead in your country.
+                                </p>
+                            </div>
+                            <p></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- Footer -->
+    <footer class="pt-5 pb-4" style="background: linear-gradient(135deg, #2b3a67 0%, #23235b 100%);">
+        <div class="container">
+            <div class="row">
+                <!-- Company Info -->
+                <div class="col-lg-5 col-md-6 mb-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="./assets/images/JD-logo-reverse.png" alt="James Douglas Logo" height="32">
+                    </div>
+                    <p class="text-white mb-4" style="opacity: 0.8; line-height: 1.6;">
+                        At James Douglas, we connect exceptional leadership talent with forward-thinking companies
+                        through
+                        tailored executive search solutions driven by insight, precision, and impact.
+                    </p>
+                    <!-- Social Media Icons -->
+                    <div class="d-flex gap-2">
+                        <a href="#" class="text-white" style="opacity: 0.7;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px; background-color: rgba(255,255,255,0.1);">
+                                <i class="bi bi-linkedin"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="text-white" style="opacity: 0.7;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px; background-color: rgba(255,255,255,0.1);">
+                                <i class="bi bi-twitter"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="text-white" style="opacity: 0.7;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px; background-color: rgba(255,255,255,0.1);">
+                                <i class="bi bi-globe"></i>
+                            </div>
+                        </a>
+                        <a href="#" class="text-white" style="opacity: 0.7;">
+                            <div class="rounded-circle d-flex align-items-center justify-content-center"
+                                style="width: 40px; height: 40px; background-color: rgba(255,255,255,0.1);">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Our Services -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <h5 class="footer-heading">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="./about-us.html" class="text-white text-decoration-none"
+                                style="opacity: 0.8;">About Us</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="./career.html" class="text-white text-decoration-none" style="opacity: 0.8;">
+                                Career</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="./contact-us.html" class="text-white text-decoration-none"
+                                style="opacity: 0.8;">Contact US</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="./about-us.html#management" class="text-white text-decoration-none"
+                                style="opacity: 0.8;">Management Team</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Industries -->
+                <!-- <div class="col-lg-2 col-md-6 mb-4">
+                    <h5 class="text-info fw-semibold mb-3">Industries</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">Financial
+                                Services</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">Technology</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">Healthcare</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">Manufacturing</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#" class="text-white text-decoration-none" style="opacity: 0.8;">Consumer Goods</a>
+                        </li>
+                    </ul>
+                </div> -->
+
+                <!-- Get in Touch -->
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <h5 class="text-info fw-semibold mb-3">Get in Touch</h5>
+                    <div class="mb-3">
+                        <div class="d-flex align-items-start mb-2">
+                            <i class="bi bi-geo-alt-fill text-white me-2 mt-1" style="opacity: 0.7;"></i>
+                            <div>
+                                <p class="text-white mb-0 fs-6">
+                                    Gate Village 7, Level 2, Office 206, 
+                                    <br>
+                                    DIFC P. O. Box 507340, Dubai - UAE
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <div class="d-flex align-items-center mb-2">
+                            <i class="bi bi-telephone-fill text-white me-2" style="opacity: 0.7;"></i>
+                            <p class="text-white mb-0" style="opacity: 0.8;">+971 (0) 4 330 3110</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-envelope-fill text-white me-2" style="opacity: 0.7;"></i>
+                            <p class="text-white mb-0" style="opacity: 0.8;">enquiries@jamesdouglas.ae</p>
+                        </div>
+                    </div>
+                   <a href="./contact-us.html" class="btn btn-warning-custom px-4 py-2 fw-semibold">
+                        Start a Conversation
+                    </a>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <hr class="my-4" style="border-color: rgba(255,255,255,0.2);">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <p class="text-white mb-0" style="opacity: 0.6;"> 2025 James Douglas. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-center">
+                    <div class="d-flex flex-wrap justify-content-md-end gap-3">
+                        <a href="./privacy-policy.html" class="text-white text-decoration-none"
+                            style="opacity: 0.6;">Privacy Policy</a>
+                          <!-- <a href="./terms-of-service.html" class="text-white text-decoration-none"
+                            style="opacity: 0.6;">Terms of Service</a> -->
+                        <!-- <a href="./cookie-policy.html" class="text-white text-decoration-none"
+                            style="opacity: 0.6;">Cookie Policy</a> -->
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="./assets/js/main.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 800,
+            once: true,
+            offset: 100
+        });
+    </script>
+</body>
+</html>

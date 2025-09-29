@@ -1766,3 +1766,11 @@ html {
   background: white;
   color: #23235b;
 }
+
+footer p {
+  color: white!important;
+}
+
+#servicesDropdown i {
+  display: none;
+}
