@@ -416,16 +416,14 @@ html {
   margin-top: 50px;
 } */
 
-@media (max-width: 358px) {
+@media (max-width: 768px) {
 .feature-cards-container {
     margin-top: 50px;
     margin-left: -11px;
-    margin-right: -9px;
 }
 
 .gap-4 {
     gap: 0.4rem !important;
-}
 }
 
 .card {

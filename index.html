@@ -43,6 +43,17 @@
        #home-2banner {
             background: url("./assets/images/hero-banner.png") center/cover no-repeat;
         }
+
+        @media only screen and (min-width:1024px) {
+            .team-content {
+                display: grid;
+                align-items: center;
+            }
+
+            .team-content a {
+                text-decoration: none;
+            }
+        }
     </style>
 </head>
 
@@ -137,6 +148,22 @@
                                 <h1>
                                     <span class="hero-corner">Your career. </span><br>
                                     Your legacy.
+                                </h1>
+                                <p>
+                                    We stand beside leaders at defining moments, helping them make decisions that
+                                    matter.
+                                </p>
+                            </div>
+                    </section>
+                </div>
+                <!-- Slide 3 - Duplicate with different text -->
+                <div class="swiper-slide" id="home-2banner">
+                    <section class="banner">
+                        <div class="banner-overlay">
+                            <div class="banner-content">
+                                <h1>
+                                    <span class="hero-corner">Advisors. Partners. </span><br>
+                                    Redefining Futures.
                                 </h1>
                                 <p>
                                     We stand beside leaders at defining moments, helping them make decisions that
@@ -302,28 +329,25 @@ background: linear-gradient(
 );
 ">
         <div class="container">
-            <div class="row align-items-center">
+            <div class="row align-items-center justify-content-between">
                 <!-- Left: Heading, description, buttons -->
-                <div class="col-lg-6 mb-4 mb-lg-0" data-aos="fade-right">
+                <div class="col-lg-6 mb-4 mb-lg-0 aos-init aos-animate" data-aos="fade-right">
                     <h2 class="section-heading text-white">
                         Why Choose
-                        <span style="color: #00aeef"><br />James Douglas?</span>
+                        <span style="color: #00aeef"><br>James Douglas?</span>
                     </h2>
-                    <div style="
-        width: 80px;
-        height: 4px;
-        background: #ff9900;
-        margin: 16px 0 24px 0;
-        border-radius: 2px;
-    "></div>
+                    <div style="width: 80px; height: 4px; background: #ff9900; margin: 16px 0 24px 0; border-radius: 2px;"></div>
                     <p class="text-white-50 mb-4" style="font-size: 1.1rem">
-                        Because leadership is not a transaction-it is transformation.
-                        At James Douglas, we co-create solutions that shape leaders,
-                        guide organizations with trusted advice, and build legacies
-                        that last.
+                       Because leadership is not a transaction. It is transformation. 
                     </p>
+                    <ul class="text-white mb-4 p-2">
+                        <li>Partnership over Process – We co-create solutions with clients and leaders. </li>
+                        <li>Advisory over Transactions – Our role is to build a career not just find a job. </li>
+                        <li>Meaning over Metrics – Is measured in growth and impact, not numbers. </li>
+                        <li>Legacies, not quick fixes – We help shape leadership that lasts. </li>
+                    </ul>
                     <div class="d-flex gap-3 flex-wrap">
-                        <a href="about-us.html" class="btn btn-warning btn-warning-custom fw-semibold px-4" style="
+                        <a href="about-us.html" class="btn btn-warning-custom fw-semibold px-4" style="
         color: #fff;
         background: #ff9900;
         border: none;
@@ -335,15 +359,14 @@ background: linear-gradient(
                     </div>
                 </div>
                 <!-- Right: Two separate containers with 2 cards each -->
-                <div class="col-lg-6" data-aos="fade-left">
+                <div class="col-lg-6 aos-init aos-animate" data-aos="fade-left">
                     <div class="d-flex gap-4 feature-cards-container">
                         <!-- Left Container - 2 Cards -->
                         <div class="flex-1">
-                            <div class="mb-3" data-aos="zoom-in" data-aos-delay="100">
+                            <div class="mb-3 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                                 <div class="p-4 h-100 rounded-3 d-flex flex-column align-items-start feature-card">
                                     <div class="mb-2 feature-card-icon precision">
-                                        <img src="./assets/images/icons/precision.svg" alt="" height="42px;"
-                                            width="42px;" />
+                                        <img src="assets/images/icons/precision.svg" alt="" height="42px;" width="42px;">
                                     </div>
                                     <div class="fw-bold text-white">Partnership</div>
                                     <div class="text-white-50 small">
@@ -351,11 +374,10 @@ background: linear-gradient(
                                     </div>
                                 </div>
                             </div>
-                            <div data-aos="zoom-in" data-aos-delay="300">
+                            <div data-aos="zoom-in" data-aos-delay="300" class="aos-init aos-animate">
                                 <div class="p-4 h-100 rounded-3 d-flex flex-column align-items-start feature-card">
                                     <div class="mb-2 feature-card-icon speed">
-                                        <img src="./assets/images/icons/Speed.svg" alt="" height="42px;"
-                                            width="42px;" />
+                                        <img src="assets/images/icons/Speed.svg" alt="" height="42px;" width="42px;">
                                     </div>
                                     <div class="fw-bold text-white">Advisory</div>
                                     <div class="text-white-50 small">
@@ -367,11 +389,10 @@ background: linear-gradient(
 
                         <!-- Right Container - 2 Cards -->
                         <div class="flex-1 mt-4">
-                            <div class="mb-3" data-aos="zoom-in" data-aos-delay="200">
+                            <div class="mb-3 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="p-4 h-100 rounded-3 d-flex flex-column align-items-start feature-card">
                                     <div class="mb-2 feature-card-icon innovation">
-                                        <img src="./assets/images/icons/innovation.svg" alt="" height="42px;"
-                                            width="42px;" />
+                                        <img src="assets/images/icons/innovation.svg" alt="" height="42px;" width="42px;">
                                     </div>
                                     <div class="fw-bold text-white">Meaning</div>
                                     <div class="text-white-50 small">
@@ -379,11 +400,10 @@ background: linear-gradient(
                                     </div>
                                 </div>
                             </div>
-                            <div data-aos="zoom-in" data-aos-delay="400">
+                            <div data-aos="zoom-in" data-aos-delay="400" class="aos-init aos-animate">
                                 <div class="p-4 h-100 rounded-3 d-flex flex-column align-items-start feature-card">
                                     <div class="mb-2 feature-card-icon excellence">
-                                        <img src="./assets/images/icons/Excellence.svg" alt="" height="42px;"
-                                            width="42px;" />
+                                        <img src="assets/images/icons/Excellence.svg" alt="" height="42px;" width="42px;">
                                     </div>
                                     <div class="fw-bold text-white">Legacy</div>
                                     <div class="text-white-50 small">
@@ -509,7 +529,7 @@ background: linear-gradient(
                     style=" width: 80px; height: 4px; background: #ff9900; margin: 16px auto 0 auto; border-radius: 2px; ">
                 </div>
                 <p class=" mt-4" style="color: #444; font-size: 1.1rem">
-                    Our team is the heart of everything we do. Get to know the talent driving transformative results
+                    Our team is the heart of everything we do. Get to know the talent driving transformative results.
                 </p>
             </div>
             <div style="display: flex; justify-content: center; margin-top:40px;" data-aos="slide-up"
@@ -521,17 +541,61 @@ background: linear-gradient(
                         <div class="carousel-item active">
                             <div class="team-slide">
                                 <div class="team-content">
-                                    <h3 class="consultant-name">Faiz Nomani</h3>
-                                    <div class="team-position">Regional Director</div>
+                                    <h3 class="consultant-name">
+                                        Faiz Nomani</h3>
+                                    <div class="team-position">Regional Director
+                                    </div>
                                     <p class="team-description">
-                                      Faiz will oversee regional operations, strengthen client relationships, and drive business development initiatives. 
+                                       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illum quae dolorem tempora quo, repellendus dicta officiis autem? Laborum saepe voluptas dignissimos molestiae! Sint veniam mollitia cupiditate a eligendi laboriosam ipsum?
                                     </p>
-                                    <a href="./about-us.html#MeetOurLeadership" class="team-btn btn-warning-custom text-decoration-none">
-                                        Know more &gt;
-                                    </a>
+                                    <a href="./about-us.html#MeetOurLeadership"><button class="team-btn btn-warning-custom">
+                                            Know more &gt;
+                                        </button></a>
                                 </div>
                                 <div class="team-image-container">
-                                    <img src="./images/leader/Faiz-Nomani.jpeg" alt="Amarjeet Dutta"
+                                    <img src="./images/our-leadership-images/FaizNomani.jpg" alt=" Faiz Nomani"
+                                        class="team-image">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="carousel-item">
+                            <div class="team-slide">
+                                <div class="team-content">
+                                    <h3 class="consultant-name">
+                                        Anas Al Tekreeti  </h3>
+                                    <div class="team-position">Principal Consultant 
+                                    </div>
+                                    <p class="team-description">
+                                       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est similique esse ipsa deserunt! Perferendis doloribus porro asperiores beatae dolores. Nam quidem error ad magnam eligendi animi laborum odit eum placeat.
+
+                                    </p>
+                                    <a href="./about-us.html#MeetOurLeadership"><button class="team-btn btn-warning-custom">
+                                            Know more &gt;
+                                        </button></a>
+                                </div>
+                                <div class="team-image-container">
+                                    <img src="./images/our-leadership-images/AnasAlTekreeti-Color1.jpg" alt="Anas Al Tekreeti"
+                                        class="team-image">
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="carousel-item">
+                            <div class="team-slide">
+                                <div class="team-content">
+                                    <h3 class="consultant-name">
+                                        Charu Jindal </h3>
+                                    <div class="team-position">Principal Consultant
+                                    </div>
+                                    <p class="team-description">
+                                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas repellendus alias cum totam ex magni sequi tempore nobis temporibus, impedit ut unde nemo libero ratione quo, similique expedita, a inventore!
+                                    <a href="./about-us.html#MeetOurLeadership"><button class="team-btn btn-warning-custom">
+                                            Know more &gt;
+                                        </button></a>
+                                </div>
+                                <div class="team-image-container">
+                                    <img src="./images/our-leadership-images/CharuJindal-Color1.jpg" alt=" Charu Jindal"
                                         class="team-image">
                                 </div>
                             </div>
@@ -542,9 +606,11 @@ background: linear-gradient(
             </div>
         </div>
         <!-- Carousel Indicators -->
-        <div class="carousel-indicators d-none" style="position: static; margin: 20px auto 0; width: fit-content;">
+        <div class="carousel-indicators" style="position: static; margin: 20px auto 0; width: fit-content;">
             <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="0" class="active" aria-current="true"
                 aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#teamCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
         </div>
         </div>
     </section>
@@ -672,8 +738,7 @@ background: linear-gradient(
         </div>
     </section>
     <!-- End Call to Action Section -->
-
-    <!-- Footer -->
+ <!-- Footer -->
     <footer class="pt-5 pb-4" style="background: linear-gradient(135deg, #2b3a67 0%, #23235b 100%);">
         <div class="container">
             <div class="row">
@@ -682,7 +747,7 @@ background: linear-gradient(
                     <!-- <div class="d-flex align-items-center mb-3">
                         <img src="./assets/images/JD-logo-reverse.png" alt="James Douglas Logo" height="32">
                     </div> -->
-                   <h5 class="footer-heading">About </h5>
+                    <h5 class="footer-heading">About James Douglas UAE </h5>
                     <p class="text-white mb-4" style="opacity: 0.8; line-height: 1.6;">
                         At James Douglas, we connect exceptional leadership talent with forward-thinking companies
                         through
@@ -690,13 +755,13 @@ background: linear-gradient(
                     </p>
                     <!-- Social Media Icons -->
                     <div class="d-flex gap-2">
-                        <a href="#" class="text-white" style="opacity: 0.7;">
+                        <a href="https://www.linkedin.com/company/james-douglas-middle-east/?viewAsMember=true" class="text-white" style="opacity: 0.7;">
                             <div class="rounded-circle d-flex align-items-center justify-content-center"
                                 style="width: 40px; height: 40px; background-color: rgba(255,255,255,0.1);">
                                 <i class="bi bi-linkedin"></i>
                             </div>
                         </a>
-                        <a href="#" class="text-white" style="opacity: 0.7;">
+                        <!-- <a href="#" class="text-white" style="opacity: 0.7;">
                             <div class="rounded-circle d-flex align-items-center justify-content-center"
                                 style="width: 40px; height: 40px; background-color: rgba(255,255,255,0.1);">
                                 <i class="bi bi-twitter"></i>
@@ -713,7 +778,7 @@ background: linear-gradient(
                                 style="width: 40px; height: 40px; background-color: rgba(255,255,255,0.1);">
                                 <i class="bi bi-envelope"></i>
                             </div>
-                        </a>
+                        </a> -->
                     </div>
                 </div>
 
@@ -771,7 +836,7 @@ background: linear-gradient(
                             <i class="bi bi-geo-alt-fill text-white me-2 mt-1" style="opacity: 0.7;"></i>
                             <div>
                                 <p class="text-white mb-0 fs-6">
-                                    Gate Village 7, Level 2, Office 206, 
+                                    Gate Village 7, Level 2, Office 206,
                                     <br>
                                     DIFC P. O. Box 507340, Dubai - UAE
                                 </p>
@@ -790,7 +855,7 @@ background: linear-gradient(
                             <p class="text-white mb-0" style="opacity: 0.8;">enquiries@jamesdouglas.ae</p>
                         </div>
                     </div>
-                   <a href="./contact-us.html" class="btn btn-warning-custom px-4 py-2 fw-semibold">
+                    <a href="./contact-us.html" class="btn btn-warning-custom px-4 py-2 fw-semibold">
                         Start a Conversation
                     </a>
                 </div>
@@ -806,7 +871,7 @@ background: linear-gradient(
                     <div class="d-flex flex-wrap justify-content-md-end gap-3">
                         <a href="./privacy-policy.html" class="text-white text-decoration-none"
                             style="opacity: 0.6;">Privacy Policy</a>
-                          <!-- <a href="./terms-of-service.html" class="text-white text-decoration-none"
+                        <!-- <a href="./terms-of-service.html" class="text-white text-decoration-none"
                             style="opacity: 0.6;">Terms of Service</a> -->
                         <!-- <a href="./cookie-policy.html" class="text-white text-decoration-none"
                             style="opacity: 0.6;">Cookie Policy</a> -->
@@ -816,7 +881,6 @@ background: linear-gradient(
             </div>
         </div>
     </footer>
-
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
