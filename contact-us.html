@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
     <style>
         .section-divider {
-            margin-top: 5px;
-            margin-bottom: 16px;
-            margin-left: 0;
-        }
+    margin: 5px auto 16px;  /* top, left/right (auto = center), bottom */
+    display: block;         /* ensures the auto margin works properly */
+}
+
     </style>
 </head>
 
@@ -87,7 +87,10 @@
     <section class="banner" id="contact-banner">
         <div class="banner-overlay">
             <div class="banner-content">
-                <h1>Contact us</h1>
+                <h1>
+                    <span class="hero-corner">Contact</span>
+                    <!-- <br> -->
+                </h1>
             </div>
         </div>
     </section>

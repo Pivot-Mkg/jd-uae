@@ -238,15 +238,15 @@ html {
 }
 
 #home-1banner {
-  background: url("../images/home-1banner.jpg") center/cover no-repeat;
+  background: url("../images/banner/Group\ 6.png") center/cover no-repeat;
 }
 
-/* #home-2banner {
-  background: url("../images/banner/home-banner-2.jpg") center/cover no-repeat;
-} */
+#home-2banner {
+  background: url("../images/banner/new-banner-2.jpg") center/cover no-repeat;
+}
 
 #home-3banner {
-  background: url("../images/home-3-banner.png") center/cover no-repeat;
+  background: url("../images/banner/new-banner-3.jpg") center/cover no-repeat;
 }
 
 #about-banner {
@@ -322,15 +322,15 @@ html {
 }
 
 .hero-corner::before {
-  content: "";
-  position: absolute;
-  top: -8px;
-  right: -21px;
-  width: 38px;
-  height: 38px;
-  display: block;
-  transform: scale(0.7);
-  background: url("../images/icons/hero-heading-corner.svg") no-repeat center/contain;
+    content: "";
+    position: absolute;
+    top: -18px;
+    right: -33px;
+    width: 38px;
+    height: 38px;
+    display: block;
+    transform: scale(0.7);
+    background: url("../images/icons/hero-heading-corner.svg") no-repeat center/contain;
 }
 
 /* 4. Reusable Components
@@ -810,8 +810,8 @@ html {
 .carousel-indicators [data-bs-target] {
   box-sizing: content-box;
   flex: 0 1 auto;
-  width: 12px;
-  height: 12px;
+  width: 8px;
+  height: 8px;
   border-radius: 152px;
   padding: 0;
   margin-right: 3px;
@@ -1174,16 +1174,17 @@ html {
 }
 
 .leadership-swiper .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background: var(--jd-primary-dark);
+  width: 8px;
+  height: 8px;
+  /* background: var(--jd-primary-dark); */
+  /* background: var(--swiper-pagination-color, var(--swiper-theme-color)); */
   opacity: 0.3;
   transition: all 0.3s ease;
 }
 
 .leadership-swiper .swiper-pagination-bullet-active {
   opacity: 1;
-  background: var(--jd-warning);
+  /* background: var(--jd-warning); */
   transform: scale(1.2);
 }
 
@@ -1491,7 +1492,7 @@ html {
 }
 
 .banner .swiper-pagination-bullet-active {
-  background: var(--jd-warning);
+      background: var(--swiper-pagination-color, var(--swiper-theme-color));
 }
 
 /* Contact Form Mobile Styles */
@@ -1628,15 +1629,15 @@ html {
 
   /* mobile-banners for the opages starts from here  */
   #home-1banner {
-    background: url("../images/home-1banner-mob.jpg") center/cover no-repeat;
+    background: url("../images/banner/UAE-1-banner-mob\ 1.png") center/cover no-repeat;
   }
 
   #home-2banner {
-    background: url("../images/home-2-banner-mob.jpg") center/cover no-repeat;
+    background: url("../images/banner/UAE-2-banner-mob.png") center/cover no-repeat;
   }
 
   #home-3banner {
-    background: url("../images/home-3-banner-mob.jpg") center/cover no-repeat;
+    background: url("../images/banner/UAE-3-banner-mob\ 1.png") center/cover no-repeat;
   }
 }
 
@@ -1792,3 +1793,109 @@ footer p {
   color: white!important;
   border-color: #ff9900;
 }
+
+
+        :root {
+            --mouse-w: 26px;
+            /* outer mouse width */
+            --mouse-h: 44px;
+            /* outer mouse height */
+            --mouse-border: 2px;
+            /* border thickness */
+            --mouse-radius: 16px;
+            /* outer radius */
+            --dot-w: 3px;
+            /* inner line width */
+            --dot-h: 10px;
+            /* inner line height */
+            --pad: 6px;
+            /* top/bottom padding inside mouse */
+            --color: rgba(255, 255, 255, 0.95);
+            --shadow: rgba(0, 0, 0, .25);
+            --z: 10;
+        }
+
+        /* Container for the indicator */
+        .scroll-indicator {
+            position: absolute;
+            left: 50%;
+            bottom: 10px;
+            transform: translateX(-50%);
+            display: inline-grid;
+            place-items: center;
+            gap: .4rem;
+            cursor: pointer;
+            -webkit-user-select: none;
+            user-select: none;
+            z-index: var(--z);
+        }
+
+        .scroll-indicator .mouse {
+            width: var(--mouse-w);
+            height: var(--mouse-h);
+            border: var(--mouse-border) solid var(--color);
+            border-radius: var(--mouse-radius);
+            position: relative;
+            box-shadow: 0 4px 10px var(--shadow);
+        }
+
+        /* The animated center line */
+        .scroll-indicator .dot {
+            position: absolute;
+            left: 50%;
+            width: var(--dot-w);
+            height: var(--dot-h);
+            margin-left: calc(var(--dot-w) / -2);
+            background: var(--color);
+            border-radius: 2px;
+            /* Start near the top */
+            top: var(--pad);
+            /* Animation: slow down, quick up, hold at top */
+            animation: slide 3s ease-in-out infinite;
+        }
+
+        @keyframes slide {
+            0% {
+                top: var(--pad);
+                opacity: 1;
+            }
+
+            55% {
+                top: calc(var(--mouse-h) - var(--pad) - var(--dot-h));
+                opacity: 1;
+            }
+
+            70% {
+                top: var(--pad);
+                opacity: 1;
+            }
+
+            88% {
+                top: var(--pad);
+                opacity: 1;
+            }
+
+            92% {
+                opacity: .7;
+            }
+
+            100% {
+                top: var(--pad);
+                opacity: 1;
+            }
+        }
+
+        .scroll-indicator .hint {
+            font-size: .75rem;
+            letter-spacing: .08em;
+            opacity: .9;
+        }
+
+        .scroll-indicator .hint svg {
+            vertical-align: -2px;
+        }
+
+        .scroll-indicator:hover .mouse {
+            box-shadow: 0 0 0 5px rgba(255, 255, 255, .08), 0 4px 10px var(--shadow);
+        }
+    

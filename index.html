@@ -21,11 +21,12 @@
         .swiper-pagination-fraction {
             width: fit-content;
             /* padding: 1px 3px; */
-            margin: 0 auto;
+            margin: 3px auto;
             right: 0;
             left: 0;
             /* background-color: #ffffff48; */
             border-radius: 10px;
+            z-index: 10;
         }
 
         .swiper-wrapper .swiper-slide {
@@ -40,9 +41,9 @@
             margin-top: 2em;
         }
 
-       #home-2banner {
-            background: url("./assets/images/banner/home-banner-2.jpg") center/cover no-repeat !important;
-        }
+       /* #home-2banner {
+            background: url("./assets/images/banner/home-banner-2.jpg") center/cover no-repeat;
+        } */
 
         @media only screen and (min-width:1024px) {
             .team-content {
@@ -54,6 +55,11 @@
                 text-decoration: none;
             }
         }
+
+        .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
+    transform: translate3d(0px,0,0);
+    margin-bottom: 15px;
+}
     </style>
 </head>
 
@@ -119,7 +125,6 @@
 
     <!-- Sticky clone will be injected here by JS -->
     <div id="stickyNavbarContainer" aria-hidden="true"></div>
-
 
     <!-- Banner -->
     <section class="banner" id="home-1banner">
@@ -942,10 +947,8 @@ background: linear-gradient(
         // Initialize Swiper
         var bannerSwiper = new Swiper(".bannerSwiper", {
             loop: true,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
+            // autoplay: 
+            autoplay:false,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
