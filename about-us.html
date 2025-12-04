@@ -120,6 +120,8 @@
         .scroll-indicator:hover .mouse {
             box-shadow: 0 0 0 5px rgba(255, 255, 255, .08), 0 4px 10px var(--shadow);
         }
+
+     
     </style>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
@@ -145,6 +147,14 @@
         #about-banner {
             background: url("./images/about-us-banner.jpg") center/cover no-repeat;
         }
+
+        /* .section-divider {
+  width: 111px;
+  height: 4px;
+  margin: 0px;
+  border-radius: 2px;
+  background-color: var(--jd-warning);
+} */
     </style>
 </head>
 
@@ -236,18 +246,18 @@
     <!-- about us -->
     <section class="py-5 bg-white">
         <div class="container">
-            <div class="text-center" data-aos="fade-up">
+            <div class="" data-aos="fade-up">
                 <h2 class="section-heading">
                     About Us
                 </h2>
-                <div class="section-divider"></div>
+                <div class="section-divider" style="margin: 0px;"></div>
                 <p class="mt-4">
                     James Douglas Middle East (JDME) is a leadership hiring and advisory firm headquartered in Dubai
                     DIFC. We partner with organizations across the UAE, Saudi Arabia, and wider GCC to identify and
                     shape leaders who drive growth, transformation, and national priorities.
                 </p>
                 <p>
-                    Our focus is leadership hiring — business leaders, functional heads, and senior managers who play
+                    Our focus is leadership hiring business leaders, functional heads, and senior managers who play
                     pivotal roles in building resilient organizations. We are not transactional recruiters; we provide
                     advisory-led search that ensures cultural fit, long-term impact, and alignment with organizational
                     vision.
@@ -259,12 +269,12 @@
                     offer clients end-to-end leadership solutions from functional leadership to the boardroom.
                 </p>
             </div>
-            <div class="text-center" data-aos="fade-up">
+            <div class="" data-aos="fade-up">
                 <h2 class="section-heading mt-5">
                     Our GCC Relevance
                 </h2>
-                <div class="section-divider"></div>
-                <p class="mt-4 section-subtitle mb-1">
+                <div class="section-divider" style="margin: 0px;"></div>
+                <p class="mt-4 mb-1">
                     Aligned with UAE Vision 2031 and Saudi Vision 2030.
                 </p>
                 <p class="mb-2">
@@ -274,7 +284,7 @@
                 <p class="mb-2">
                     Trusted partner to corporates, MNCs, family groups, and sovereign-backed enterprises.
                 </p>
-                <p class="mb-2 col-md-9 m-auto">
+                <p class="mb-2 col-md-9">
                     At JDME, we believe leadership hiring is about more than filling roles. It is about building the
                     teams that will shape industries, transform economies, and move the region forward.
                 </p>
@@ -423,6 +433,7 @@
             </div>
 
             <!-- Leadership Swiper Carousel -->
+             <div class="position-relative">
             <div class="swiper leadership-swiper" data-aos="slide-up" data-aos-delay="200">
                 <div class="swiper-wrapper">
                     <!-- slide 1 -->
@@ -635,7 +646,9 @@
                 <!-- Swiper Pagination -->
                 <div class="swiper-pagination"></div>
 
-                <!-- Swiper Navigation -->
+              
+            </div>
+              <!-- Swiper Navigation -->
                 <div class="swiper-button-prev"></div>
                 <div class="swiper-button-next"></div>
             </div>

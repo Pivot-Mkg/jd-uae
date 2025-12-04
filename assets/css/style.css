@@ -278,7 +278,7 @@ html {
 }
 
 #nationalization-banner {
-  background: url("../images/nationalisation.jpg") center/cover no-repeat;
+  background: url("../images/banner/GCC banner-01.png") center/cover no-repeat;
 }
 
 #technology-digital-banner {
@@ -827,7 +827,7 @@ html {
 
 .carousel-indicators .active {
   opacity: 1;
-  background-color: var(--jd-orange);
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
 }
 
 .consultant-card {
@@ -1898,4 +1898,57 @@ footer p {
         .scroll-indicator:hover .mouse {
             box-shadow: 0 0 0 5px rgba(255, 255, 255, .08), 0 4px 10px var(--shadow);
         }
+
+        .position-relative{
+          position: relative;
+        }
     
+        .swiper-button-next:after {
+    position: absolute;
+    right: 19px;
+        }
+    
+        .swiper-button-prev:after {
+    position: absolute;
+    left: 19px;
+        }
+
+        /* Wrapper must allow overflow so arrows are visible */
+.position-relative {
+    overflow: visible !important;
+}
+
+/* Style the arrow buttons (your design spec) */
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--jd-primary-dark);
+    background: white;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+}
+
+/* Move arrows OUTSIDE the Swiper container */
+.swiper-button-prev {
+    left: -65px;      /* adjust to your liking */
+}
+
+.swiper-button-next {
+    right: -65px;     /* adjust to your liking */
+}
+
+/* Arrow icon inside the circle */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 24px;
+}
