@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <title>Home - James Douglas UAE</title>
+    <title>Home - James Douglas UAE</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Swiper CSS -->
@@ -41,9 +41,12 @@
             margin-top: 2em;
         }
 
-       /* #home-2banner {
+        /* #home-2banner {
             background: url("./assets/images/banner/home-banner-2.jpg") center/cover no-repeat;
         } */
+        .swiper-pagination-bullets.swiper-pagination-horizontal {
+            bottom: 14px;
+        }
 
         @media only screen and (min-width:1024px) {
             .team-content {
@@ -56,10 +59,12 @@
             }
         }
 
-        .swiper-android .swiper-slide, .swiper-ios .swiper-slide, .swiper-wrapper {
-    transform: translate3d(0px,0,0);
-    margin-bottom: 15px;
-}
+        .swiper-android .swiper-slide,
+        .swiper-ios .swiper-slide,
+        .swiper-wrapper {
+            transform: translate3d(0px, 0, 0);
+            margin-bottom: 15px;
+        }
     </style>
 </head>
 
@@ -68,7 +73,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top py-3" id="mainNavbar">
         <div class="container-fluid">
             <a class="navbar-brand d-flex align-items-center" href="./index.html">
-              <img src="./images/brand/new-jd-uae.png" alt="James Douglas Logo" height="44" class="me-2" />
+                <img src="./images/brand/new-jd-uae.png" alt="James Douglas Logo" height="44" class="me-2" />
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -105,7 +110,7 @@
                     <li>
                         <a class="nav-link" href="./leaders.html">For Leaders</a>
                     </li> -->
-                    
+
                     <li class="nav-item">
                         <a class="nav-link" href="./insights-hub.html">Insights</a>
                     </li>
@@ -128,11 +133,11 @@
     <div id="stickyNavbarContainer" aria-hidden="true"></div>
 
     <!-- Banner -->
-    <section class="banner" id="home-1banner">
+    <section class="banner">
         <div class="swiper bannerSwiper">
             <div class="swiper-wrapper">
                 <!-- Slide 1 -->
-                <div class="swiper-slide">
+                <div class="swiper-slide" id="home-1banner">
                     <section class="banner">
                         <div class="banner-overlay">
                             <div class="banner-content">
@@ -177,8 +182,7 @@
                             </div>
                     </section>
                 </div>
-               
-                
+
             </div>
             <!-- Add pagination -->
             <div class="swiper-pagination"></div>
@@ -342,9 +346,11 @@ background: linear-gradient(
                         Why Choose
                         <span style="color: #00aeef"><br>James Douglas?</span>
                     </h2>
-                    <div style="width: 80px; height: 4px; background: #ff9900; margin: 16px 0 24px 0; border-radius: 2px;"></div>
+                    <div
+                        style="width: 80px; height: 4px; background: #ff9900; margin: 16px 0 24px 0; border-radius: 2px;">
+                    </div>
                     <p class="text-white-50 mb-4" style="font-size: 1.1rem">
-                       Because leadership is not a transaction. It is transformation. 
+                        Because leadership is not a transaction. It is transformation.
                     </p>
                     <ul class="text-white mb-4 p-2">
                         <li>Partnership over Process – We co-create solutions with clients and leaders. </li>
@@ -372,7 +378,8 @@ background: linear-gradient(
                             <div class="mb-3 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
                                 <div class="p-4 h-100 rounded-3 d-flex flex-column align-items-start feature-card">
                                     <div class="mb-2 feature-card-icon precision">
-                                        <img src="assets/images/icons/precision.svg" alt="" height="42px;" width="42px;">
+                                        <img src="assets/images/icons/precision.svg" alt="" height="42px;"
+                                            width="42px;">
                                     </div>
                                     <div class="fw-bold text-white">Partnership</div>
                                     <div class="text-white-50 small">
@@ -398,7 +405,8 @@ background: linear-gradient(
                             <div class="mb-3 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="200">
                                 <div class="p-4 h-100 rounded-3 d-flex flex-column align-items-start feature-card">
                                     <div class="mb-2 feature-card-icon innovation">
-                                        <img src="assets/images/icons/innovation.svg" alt="" height="42px;" width="42px;">
+                                        <img src="assets/images/icons/innovation.svg" alt="" height="42px;"
+                                            width="42px;">
                                     </div>
                                     <div class="fw-bold text-white">Meaning</div>
                                     <div class="text-white-50 small">
@@ -409,7 +417,8 @@ background: linear-gradient(
                             <div data-aos="zoom-in" data-aos-delay="400" class="aos-init aos-animate">
                                 <div class="p-4 h-100 rounded-3 d-flex flex-column align-items-start feature-card">
                                     <div class="mb-2 feature-card-icon excellence">
-                                        <img src="assets/images/icons/Excellence.svg" alt="" height="42px;" width="42px;">
+                                        <img src="assets/images/icons/Excellence.svg" alt="" height="42px;"
+                                            width="42px;">
                                     </div>
                                     <div class="fw-bold text-white">Legacy</div>
                                     <div class="text-white-50 small">
@@ -552,10 +561,16 @@ background: linear-gradient(
                                     <div class="team-position">Regional Director
                                     </div>
                                     <p class="team-description">
-                                       Faiz Nomani is a seasoned talent advisory leader with 20+ years of experience across Asia and the MENA region. He has led large-scale workforce and recruitment strategies at Kelly Services, TASC Outsourcing, and high-growth startups. As Regional Director at James Douglas Middle East, he drives regional growth through next-gen RPO solutions and AI-powered platforms like MatchCore, part of the EMA Global network.
+                                        Faiz Nomani is a seasoned talent advisory leader with 20+ years of experience
+                                        across Asia and the MENA region. He has led large-scale workforce and
+                                        recruitment strategies at Kelly Services, TASC Outsourcing, and high-growth
+                                        startups. As Regional Director at James Douglas Middle East, he drives regional
+                                        growth through next-gen RPO solutions and AI-powered platforms like MatchCore,
+                                        part of the EMA Global network.
 
                                     </p>
-                                    <a href="./about-us.html#MeetOurLeadership"><button class="team-btn btn-warning-custom">
+                                    <a href="./about-us.html#MeetOurLeadership"><button
+                                            class="team-btn btn-warning-custom">
                                             Know more &gt;
                                         </button></a>
                                 </div>
@@ -574,10 +589,16 @@ background: linear-gradient(
                                     <div class="team-position">Associate Principal Consultant
                                     </div>
                                     <p class="team-description">
-                                       Julie Abdel Massih specializes in mid to senior-level recruitment across Banking & Financial Services, Shipping & Maritime, and Construction & Real Estate in the Middle East and Levant. She also supports early-stage companies with team building and process setup. A strong advocate for inclusion, she volunteers with individuals with visual impairments and supports people of determination in the workplace.
+                                        Julie Abdel Massih specializes in mid to senior-level recruitment across Banking
+                                        & Financial Services, Shipping & Maritime, and Construction & Real Estate in the
+                                        Middle East and Levant. She also supports early-stage companies with team
+                                        building and process setup. A strong advocate for inclusion, she volunteers with
+                                        individuals with visual impairments and supports people of determination in the
+                                        workplace.
 
                                     </p>
-                                    <a href="./about-us.html#MeetOurLeadership"><button class="team-btn btn-warning-custom">
+                                    <a href="./about-us.html#MeetOurLeadership"><button
+                                            class="team-btn btn-warning-custom">
                                             Know more &gt;
                                         </button></a>
                                 </div>
@@ -596,11 +617,17 @@ background: linear-gradient(
                                     <div class="team-position">Principal Consultant
                                     </div>
                                     <p class="team-description">
-                                       Charu Jindal is a Principal Consultant with 14+ years of experience in leadership hiring across technology, financial services, and e-commerce. Recognised for her strategic, consultative approach, she has connected top talent with leading organisations across the GCC, Middle East, and India. At James Douglas Middle East, she leads regional search mandates, delivering tailored recruitment solutions aligned with clients’ long-term goals.
+                                        Charu Jindal is a Principal Consultant with 14+ years of experience in
+                                        leadership hiring across technology, financial services, and e-commerce.
+                                        Recognised for her strategic, consultative approach, she has connected top
+                                        talent with leading organisations across the GCC, Middle East, and India. At
+                                        James Douglas Middle East, she leads regional search mandates, delivering
+                                        tailored recruitment solutions aligned with clients’ long-term goals.
 
-                                    <a href="./about-us.html#MeetOurLeadership"><button class="team-btn btn-warning-custom">
-                                            Know more &gt;
-                                        </button></a>
+                                        <a href="./about-us.html#MeetOurLeadership"><button
+                                                class="team-btn btn-warning-custom">
+                                                Know more &gt;
+                                            </button></a>
                                 </div>
                                 <div class="team-image-container">
                                     <img src="./images/our-leadership-images/CharuJindal-Color1.jpg" alt=" Charu Jindal"
@@ -613,25 +640,31 @@ background: linear-gradient(
                             <div class="team-slide">
                                 <div class="team-content">
                                     <h3 class="consultant-name">
-                                        Anas Al Tekreeti  </h3>
-                                    <div class="team-position">Principal Consultant 
+                                        Anas Al Tekreeti </h3>
+                                    <div class="team-position">Principal Consultant
                                     </div>
                                     <p class="team-description">
-                                       Anas Al Tekreeti brings 10+ years of experience in client strategy, business development, and account management across the MEA region. He has held senior commercial roles at Hays, CNS Middle East, TASC Outsourcing, and other firms, leading cross-functional teams and major accounts. At James Douglas Middle East, he drives sustainable growth and long-term client value through strategic regional insight.
+                                        Anas Al Tekreeti brings 10+ years of experience in client strategy, business
+                                        development, and account management across the MEA region. He has held senior
+                                        commercial roles at Hays, CNS Middle East, TASC Outsourcing, and other firms,
+                                        leading cross-functional teams and major accounts. At James Douglas Middle East,
+                                        he drives sustainable growth and long-term client value through strategic
+                                        regional insight.
 
                                     </p>
-                                    <a href="./about-us.html#MeetOurLeadership"><button class="team-btn btn-warning-custom">
+                                    <a href="./about-us.html#MeetOurLeadership"><button
+                                            class="team-btn btn-warning-custom">
                                             Know more &gt;
                                         </button></a>
                                 </div>
                                 <div class="team-image-container">
-                                    <img src="./images/our-leadership-images/AnasAlTekreeti-Color1.jpg" alt="Anas Al Tekreeti"
-                                        class="team-image">
+                                    <img src="./images/our-leadership-images/AnasAlTekreeti-Color1.jpg"
+                                        alt="Anas Al Tekreeti" class="team-image">
                                 </div>
                             </div>
                         </div>
-                        
-                     
+
+
                         <!-- Slide 5 -->
                         <div class="carousel-item">
                             <div class="team-slide">
@@ -641,10 +674,16 @@ background: linear-gradient(
                                     <div class="team-position">Consultant
                                     </div>
                                     <p class="team-description">
-                                        Honey Paryani is a Talent Consultant at James Douglas Middle East, specializing in mid to senior-level recruitment across Technology, Banking, Real Estate, FinTech, and emerging African markets. With experience in India, the GCC, and Africa, she blends in-house and consulting expertise to deliver tailored hiring solutions. She also leads the firm’s social media and employer branding efforts, enhancing digital presence and talent engagement.
-                                    <a href="./about-us.html#MeetOurLeadership"><button class="team-btn btn-warning-custom">
-                                            Know more &gt;
-                                        </button></a>
+                                        Honey Paryani is a Talent Consultant at James Douglas Middle East, specializing
+                                        in mid to senior-level recruitment across Technology, Banking, Real Estate,
+                                        FinTech, and emerging African markets. With experience in India, the GCC, and
+                                        Africa, she blends in-house and consulting expertise to deliver tailored hiring
+                                        solutions. She also leads the firm’s social media and employer branding efforts,
+                                        enhancing digital presence and talent engagement.
+                                        <a href="./about-us.html#MeetOurLeadership"><button
+                                                class="team-btn btn-warning-custom">
+                                                Know more &gt;
+                                            </button></a>
                                 </div>
                                 <div class="team-image-container">
                                     <img src="./images/our-leadership-images/Honey.png" alt=" Charu Jindal"
@@ -653,7 +692,7 @@ background: linear-gradient(
                             </div>
                         </div>
 
-                           <!-- Slide 4 -->
+                        <!-- Slide 4 -->
                         <div class="carousel-item">
                             <div class="team-slide">
                                 <div class="team-content">
@@ -662,13 +701,19 @@ background: linear-gradient(
                                     <div class="team-position">Principal Consultant
                                     </div>
                                     <p class="team-description">
-                                        
-Nadine Ghoraieb brings 15+ years of international experience in corporate banking, leadership advisory, and talent development across Europe and the Middle East. She has a strong track record in client relationship management, strategic advisory, and cross-cultural leadership. At James Douglas Middle East, she leverages her global perspective to strengthen leadership capabilities, support organisational growth, and build long-term, trust-led partnerships.
+
+                                        Nadine Ghoraieb brings 15+ years of international experience in corporate
+                                        banking, leadership advisory, and talent development across Europe and the
+                                        Middle East. She has a strong track record in client relationship management,
+                                        strategic advisory, and cross-cultural leadership. At James Douglas Middle East,
+                                        she leverages her global perspective to strengthen leadership capabilities,
+                                        support organisational growth, and build long-term, trust-led partnerships.
 
 
-                                    <a href="./about-us.html#MeetOurLeadership"><button class="team-btn btn-warning-custom">
-                                            Know more &gt;
-                                        </button></a>
+                                        <a href="./about-us.html#MeetOurLeadership"><button
+                                                class="team-btn btn-warning-custom">
+                                                Know more &gt;
+                                            </button></a>
                                 </div>
                                 <div class="team-image-container">
                                     <img src="./images/our-leadership-images/Nadine Ghoraieb.jpg" alt=" Charu Jindal"
@@ -677,7 +722,7 @@ Nadine Ghoraieb brings 15+ years of international experience in corporate bankin
                             </div>
                         </div>
 
-                           <!-- Slide 4 -->
+                        <!-- Slide 4 -->
                         <div class="carousel-item">
                             <div class="team-slide">
                                 <div class="team-content">
@@ -686,10 +731,16 @@ Nadine Ghoraieb brings 15+ years of international experience in corporate bankin
                                     <div class="team-position">Senior Consultant
                                     </div>
                                     <p class="team-description">
-                                        Yogesh Thapa is a Consultant in James Douglas Middle East’s India office and part of the Realty, Construction, and Family Business Practice Group. With 20+ years of senior executive recruitment experience, he has advised pre-IPO ventures, Fortune 500 companies, VC firms, and PE groups across multiple sectors, leading global searches for C-suite leaders, Vice Presidents, and Country Heads.
-                                    <a href="./about-us.html#MeetOurLeadership"><button class="team-btn btn-warning-custom">
-                                            Know more &gt;
-                                        </button></a>
+                                        Yogesh Thapa is a Consultant in James Douglas Middle East’s India office and
+                                        part of the Realty, Construction, and Family Business Practice Group. With 20+
+                                        years of senior executive recruitment experience, he has advised pre-IPO
+                                        ventures, Fortune 500 companies, VC firms, and PE groups across multiple
+                                        sectors, leading global searches for C-suite leaders, Vice Presidents, and
+                                        Country Heads.
+                                        <a href="./about-us.html#MeetOurLeadership"><button
+                                                class="team-btn btn-warning-custom">
+                                                Know more &gt;
+                                            </button></a>
                                 </div>
                                 <div class="team-image-container">
                                     <img src="./images/our-leadership-images/Yogesh.png" alt=" Charu Jindal"
@@ -697,19 +748,25 @@ Nadine Ghoraieb brings 15+ years of international experience in corporate bankin
                                 </div>
                             </div>
                         </div>
-                         <!-- Slide 4 -->
+                        <!-- Slide 4 -->
                         <div class="carousel-item">
                             <div class="team-slide">
                                 <div class="team-content">
                                     <h3 class="consultant-name">
-                                        Ramona Ishak  </h3>
+                                        Ramona Ishak </h3>
                                     <div class="team-position">Consultant
                                     </div>
                                     <p class="team-description">
-                                        Ramona Ishak is a recruitment professional with 4+ years of experience delivering end-to-end hiring solutions across diverse Middle Eastern industries. She specializes in full-cycle recruitment, strong talent pipelines, and aligning hiring strategies with business goals. At James Douglas Middle East, she supports regional search mandates, enhances operational efficiency, and delivers tailored recruitment solutions focused on long-term organisational objectives.
-                                    <a href="./about-us.html#MeetOurLeadership"><button class="team-btn btn-warning-custom">
-                                            Know more &gt;
-                                        </button></a>
+                                        Ramona Ishak is a recruitment professional with 4+ years of experience
+                                        delivering end-to-end hiring solutions across diverse Middle Eastern industries.
+                                        She specializes in full-cycle recruitment, strong talent pipelines, and aligning
+                                        hiring strategies with business goals. At James Douglas Middle East, she
+                                        supports regional search mandates, enhances operational efficiency, and delivers
+                                        tailored recruitment solutions focused on long-term organisational objectives.
+                                        <a href="./about-us.html#MeetOurLeadership"><button
+                                                class="team-btn btn-warning-custom">
+                                                Know more &gt;
+                                            </button></a>
                                 </div>
                                 <div class="team-image-container">
                                     <img src="./images/our-leadership-images/Ramona.png" alt=" Charu Jindal"
@@ -718,20 +775,26 @@ Nadine Ghoraieb brings 15+ years of international experience in corporate bankin
                             </div>
                         </div>
 
-                           <!-- Slide 4 -->
+                        <!-- Slide 4 -->
                         <div class="carousel-item">
                             <div class="team-slide">
                                 <div class="team-content">
                                     <h3 class="consultant-name">
-                                        Aryan Bajriya  </h3>
+                                        Aryan Bajriya </h3>
                                     <div class="team-position">Marketing & Research
                                     </div>
                                     <p class="team-description">
-                                        Aryan Bajriya leads marketing and research initiatives at James Douglas Middle East, driving content creation, market intelligence, and strategic communication to strengthen the firm’s brand and growth. He also supports recruitment efforts, ensuring alignment between talent needs and market trends. Known for his adaptability and hands-on approach, Aryan delivers clarity, consistency, and impact across key strategic initiatives.
+                                        Aryan Bajriya leads marketing and research initiatives at James Douglas Middle
+                                        East, driving content creation, market intelligence, and strategic communication
+                                        to strengthen the firm’s brand and growth. He also supports recruitment efforts,
+                                        ensuring alignment between talent needs and market trends. Known for his
+                                        adaptability and hands-on approach, Aryan delivers clarity, consistency, and
+                                        impact across key strategic initiatives.
 
-                                    <a href="./about-us.html#MeetOurLeadership"><button class="team-btn btn-warning-custom">
-                                            Know more &gt;
-                                        </button></a>
+                                        <a href="./about-us.html#MeetOurLeadership"><button
+                                                class="team-btn btn-warning-custom">
+                                                Know more &gt;
+                                            </button></a>
                                 </div>
                                 <div class="team-image-container">
                                     <img src="./images/our-leadership-images/Aryan.png" alt=" Charu Jindal"
@@ -740,7 +803,7 @@ Nadine Ghoraieb brings 15+ years of international experience in corporate bankin
                             </div>
                         </div>
 
-                          
+
 
                     </div>
 
@@ -788,12 +851,14 @@ Nadine Ghoraieb brings 15+ years of international experience in corporate bankin
                         </div>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold text-primary-dark mb-3">
-                              Breaking Global Trends: How the UAE is Redefining Women’s Leadership Growth
+                                Breaking Global Trends: How the UAE is Redefining Women’s Leadership Growth
                             </h5>
                             <p class="card-text text-muted flex-grow-1">
-                                Around the world, the share of women hired into leadership positions has stalled or even declined
+                                Around the world, the share of women hired into leadership positions has stalled or even
+                                declined
                             </p>
-                            <a href="./blogs/Breaking Global Trends: How the UAE is Redefining Women’s Leadership Growth.html" class="text-decoration-none text-warning fw-semibold">
+                            <a href="./blogs/Breaking Global Trends: How the UAE is Redefining Women’s Leadership Growth.html"
+                                class="text-decoration-none text-warning fw-semibold">
                                 Learn More <i class="bi bi-arrow-right-short"></i>
                             </a>
                         </div>
@@ -810,12 +875,15 @@ Nadine Ghoraieb brings 15+ years of international experience in corporate bankin
                         </div>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold text-primary-dark mb-3">
-                              Cracking the Unfillable Role: How JDME Turned a 12-Month Hiring Stalemate into Strategic Success
+                                Cracking the Unfillable Role: How JDME Turned a 12-Month Hiring Stalemate into Strategic
+                                Success
                             </h5>
                             <p class="card-text text-muted flex-grow-1">
-                              Cracking the Unfillable Role: How JDME Turned a 12-Month Hiring Stalemate into Strategic Success
+                                Cracking the Unfillable Role: How JDME Turned a 12-Month Hiring Stalemate into Strategic
+                                Success
                             </p>
-                            <a href="./blogs/Cracking the Unfillable Role: How JDME Turned a 12-Month Hiring Stalemate into Strategic Success.html" class="text-decoration-none text-warning fw-semibold">
+                            <a href="./blogs/Cracking the Unfillable Role: How JDME Turned a 12-Month Hiring Stalemate into Strategic Success.html"
+                                class="text-decoration-none text-warning fw-semibold">
                                 Learn More <i class="bi bi-arrow-right-short"></i>
                             </a>
                         </div>
@@ -832,12 +900,14 @@ Nadine Ghoraieb brings 15+ years of international experience in corporate bankin
                         </div>
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title fw-bold text-primary-dark mb-3">
-                               How Technology and Agility are Redefining Leadership Hiring
+                                How Technology and Agility are Redefining Leadership Hiring
                             </h5>
                             <p class="card-text text-muted flex-grow-1">
-                               Leadership hiring in the Middle East is being rewired in real time. Two forces are driving this shift: the rapid adoption of AI across recruitment workflows
+                                Leadership hiring in the Middle East is being rewired in real time. Two forces are
+                                driving this shift: the rapid adoption of AI across recruitment workflows
                             </p>
-                            <a href="./blogs/The Future of Executive Search in the Middle East.html" class="text-decoration-none text-warning fw-semibold">
+                            <a href="./blogs/The Future of Executive Search in the Middle East.html"
+                                class="text-decoration-none text-warning fw-semibold">
                                 Learn More <i class="bi bi-arrow-right-short"></i>
                             </a>
                         </div>
@@ -886,7 +956,7 @@ Nadine Ghoraieb brings 15+ years of international experience in corporate bankin
         </div>
     </section>
     <!-- End Call to Action Section -->
- <!-- Footer -->
+    <!-- Footer -->
     <footer class="pt-5 pb-4" style="background: linear-gradient(135deg, #2b3a67 0%, #23235b 100%);">
         <div class="container">
             <div class="row">
@@ -903,7 +973,8 @@ Nadine Ghoraieb brings 15+ years of international experience in corporate bankin
                     </p>
                     <!-- Social Media Icons -->
                     <div class="d-flex gap-2">
-                        <a href="https://www.linkedin.com/company/james-douglas-middle-east/?viewAsMember=true" class="text-white" style="opacity: 0.7;">
+                        <a href="https://www.linkedin.com/company/james-douglas-middle-east/?viewAsMember=true"
+                            class="text-white" style="opacity: 0.7;">
                             <div class="rounded-circle d-flex align-items-center justify-content-center"
                                 style="width: 40px; height: 40px; background-color: rgba(255,255,255,0.1);">
                                 <i class="bi bi-linkedin"></i>
@@ -1071,7 +1142,7 @@ Nadine Ghoraieb brings 15+ years of international experience in corporate bankin
         var bannerSwiper = new Swiper(".bannerSwiper", {
             loop: true,
             // autoplay: 
-            autoplay:true,
+            autoplay: true,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
