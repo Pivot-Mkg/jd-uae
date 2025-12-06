@@ -299,7 +299,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60%;
+  width: 100%;
 }
 
 .banner-content {
@@ -322,15 +322,15 @@ html {
 }
 
 .hero-corner::before {
-    content: "";
-    position: absolute;
-    top: -18px;
-    right: -33px;
-    width: 38px;
-    height: 38px;
-    display: block;
-    transform: scale(0.7);
-    background: url("../images/icons/hero-heading-corner.svg") no-repeat center/contain;
+  content: "";
+  position: absolute;
+  top: -18px;
+  right: -33px;
+  width: 38px;
+  height: 38px;
+  display: block;
+  transform: scale(0.7);
+  background: url("../images/icons/hero-heading-corner.svg") no-repeat center/contain;
 }
 
 /* 4. Reusable Components
@@ -359,7 +359,7 @@ html {
   background-color: var(--jd-warning) !important;
   border-color: var(--jd-warning) !important;
   white-space: nowrap;
-  transition: all 0.5s ease-in-out; 
+  transition: all 0.5s ease-in-out;
 }
 
 /* .btn-warning-custom:hover {
@@ -417,15 +417,15 @@ html {
 } */
 
 @media (max-width: 358px) {
-.feature-cards-container {
+  .feature-cards-container {
     margin-top: 50px;
     margin-left: -11px;
     margin-right: -9px;
-}
+  }
 
-.gap-4 {
+  .gap-4 {
     gap: 0.4rem !important;
-}
+  }
 }
 
 .card {
@@ -1492,7 +1492,7 @@ html {
 }
 
 .banner .swiper-pagination-bullet-active {
-      background: var(--swiper-pagination-color, var(--swiper-theme-color));
+  background: var(--swiper-pagination-color, var(--swiper-theme-color));
 }
 
 /* Contact Form Mobile Styles */
@@ -1732,31 +1732,38 @@ html {
 
 @media only screen and (max-width: 600px) {
   .navbar .dropdown-menu {
-    display: none;                /* hidden by default */
-    max-height: 0;                /* collapsed */
+    display: none;
+    /* hidden by default */
+    max-height: 0;
+    /* collapsed */
     opacity: 0;
-    overflow: hidden;             /* hides content while collapsed */
-    transform: translateY(-10px)!important; /* slight upward shift */
-    transition: max-height 0.4s ease, 
-                opacity 0.3s ease, 
-                transform 0.3s ease;
-}
+    overflow: hidden;
+    /* hides content while collapsed */
+    transform: translateY(-10px) !important;
+    /* slight upward shift */
+    transition: max-height 0.4s ease,
+      opacity 0.3s ease,
+      transform 0.3s ease;
+  }
 
-.navbar .dropdown-menu.show {
-    display: block;               /* show menu */
-    max-height: 500px;            /* expand to fit content */
+  .navbar .dropdown-menu.show {
+    display: block;
+    /* show menu */
+    max-height: 500px;
+    /* expand to fit content */
     opacity: 1;
-    transform: translateY(0)!important;     /* slide down smoothly */
-}
+    transform: translateY(0) !important;
+    /* slide down smoothly */
+  }
 
 }
 
-.btn-warning-custom:hover{
-    color: #ff9900!important;
-    background: #fff!important;
-    border: 1px solid #ff9900!important;
-    white-space: nowrap!important;
-    /* transform: translateY(-4px);  */
+.btn-warning-custom:hover {
+  color: #ff9900 !important;
+  background: #fff !important;
+  border: 1px solid #ff9900 !important;
+  white-space: nowrap !important;
+  /* transform: translateY(-4px);  */
 }
 
 .primary-cta-btn {
@@ -1764,7 +1771,7 @@ html {
   width: fit-content;
   margin: auto;
   display: block;
-  color:#23235b;
+  color: #23235b;
   text-decoration: none;
   padding: 9px 32px;
   border-radius: 9px;
@@ -1781,7 +1788,7 @@ html {
 }
 
 footer p {
-  color: white!important;
+  color: white !important;
 }
 
 #servicesDropdown i {
@@ -1789,166 +1796,168 @@ footer p {
 }
 
 .primary-button:hover {
-  background-color: #ff9900!important;
-  color: white!important;
+  background-color: #ff9900 !important;
+  color: white !important;
   border-color: #ff9900;
 }
 
 
-        :root {
-            --mouse-w: 26px;
-            /* outer mouse width */
-            --mouse-h: 44px;
-            /* outer mouse height */
-            --mouse-border: 2px;
-            /* border thickness */
-            --mouse-radius: 16px;
-            /* outer radius */
-            --dot-w: 3px;
-            /* inner line width */
-            --dot-h: 10px;
-            /* inner line height */
-            --pad: 6px;
-            /* top/bottom padding inside mouse */
-            --color: rgba(255, 255, 255, 0.95);
-            --shadow: rgba(0, 0, 0, .25);
-            --z: 10;
-        }
+:root {
+  --mouse-w: 26px;
+  /* outer mouse width */
+  --mouse-h: 44px;
+  /* outer mouse height */
+  --mouse-border: 2px;
+  /* border thickness */
+  --mouse-radius: 16px;
+  /* outer radius */
+  --dot-w: 3px;
+  /* inner line width */
+  --dot-h: 10px;
+  /* inner line height */
+  --pad: 6px;
+  /* top/bottom padding inside mouse */
+  --color: rgba(255, 255, 255, 0.95);
+  --shadow: rgba(0, 0, 0, .25);
+  --z: 10;
+}
 
-        /* Container for the indicator */
-        .scroll-indicator {
-            position: absolute;
-            left: 50%;
-            bottom: 10px;
-            transform: translateX(-50%);
-            display: inline-grid;
-            place-items: center;
-            gap: .4rem;
-            cursor: pointer;
-            -webkit-user-select: none;
-            user-select: none;
-            z-index: var(--z);
-        }
+/* Container for the indicator */
+.scroll-indicator {
+  position: absolute;
+  left: 50%;
+  bottom: 10px;
+  transform: translateX(-50%);
+  display: inline-grid;
+  place-items: center;
+  gap: .4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  user-select: none;
+  z-index: var(--z);
+}
 
-        .scroll-indicator .mouse {
-            width: var(--mouse-w);
-            height: var(--mouse-h);
-            border: var(--mouse-border) solid var(--color);
-            border-radius: var(--mouse-radius);
-            position: relative;
-            box-shadow: 0 4px 10px var(--shadow);
-        }
+.scroll-indicator .mouse {
+  width: var(--mouse-w);
+  height: var(--mouse-h);
+  border: var(--mouse-border) solid var(--color);
+  border-radius: var(--mouse-radius);
+  position: relative;
+  box-shadow: 0 4px 10px var(--shadow);
+}
 
-        /* The animated center line */
-        .scroll-indicator .dot {
-            position: absolute;
-            left: 50%;
-            width: var(--dot-w);
-            height: var(--dot-h);
-            margin-left: calc(var(--dot-w) / -2);
-            background: var(--color);
-            border-radius: 2px;
-            /* Start near the top */
-            top: var(--pad);
-            /* Animation: slow down, quick up, hold at top */
-            animation: slide 3s ease-in-out infinite;
-        }
+/* The animated center line */
+.scroll-indicator .dot {
+  position: absolute;
+  left: 50%;
+  width: var(--dot-w);
+  height: var(--dot-h);
+  margin-left: calc(var(--dot-w) / -2);
+  background: var(--color);
+  border-radius: 2px;
+  /* Start near the top */
+  top: var(--pad);
+  /* Animation: slow down, quick up, hold at top */
+  animation: slide 3s ease-in-out infinite;
+}
 
-        @keyframes slide {
-            0% {
-                top: var(--pad);
-                opacity: 1;
-            }
+@keyframes slide {
+  0% {
+    top: var(--pad);
+    opacity: 1;
+  }
 
-            55% {
-                top: calc(var(--mouse-h) - var(--pad) - var(--dot-h));
-                opacity: 1;
-            }
+  55% {
+    top: calc(var(--mouse-h) - var(--pad) - var(--dot-h));
+    opacity: 1;
+  }
 
-            70% {
-                top: var(--pad);
-                opacity: 1;
-            }
+  70% {
+    top: var(--pad);
+    opacity: 1;
+  }
 
-            88% {
-                top: var(--pad);
-                opacity: 1;
-            }
+  88% {
+    top: var(--pad);
+    opacity: 1;
+  }
 
-            92% {
-                opacity: .7;
-            }
+  92% {
+    opacity: .7;
+  }
 
-            100% {
-                top: var(--pad);
-                opacity: 1;
-            }
-        }
+  100% {
+    top: var(--pad);
+    opacity: 1;
+  }
+}
 
-        .scroll-indicator .hint {
-            font-size: .75rem;
-            letter-spacing: .08em;
-            opacity: .9;
-        }
+.scroll-indicator .hint {
+  font-size: .75rem;
+  letter-spacing: .08em;
+  opacity: .9;
+}
 
-        .scroll-indicator .hint svg {
-            vertical-align: -2px;
-        }
+.scroll-indicator .hint svg {
+  vertical-align: -2px;
+}
 
-        .scroll-indicator:hover .mouse {
-            box-shadow: 0 0 0 5px rgba(255, 255, 255, .08), 0 4px 10px var(--shadow);
-        }
+.scroll-indicator:hover .mouse {
+  box-shadow: 0 0 0 5px rgba(255, 255, 255, .08), 0 4px 10px var(--shadow);
+}
 
-        .position-relative{
-          position: relative;
-        }
-    
-        .swiper-button-next:after {
-    position: absolute;
-    right: 19px;
-        }
-    
-        .swiper-button-prev:after {
-    position: absolute;
-    left: 19px;
-        }
-
-        /* Wrapper must allow overflow so arrows are visible */
 .position-relative {
-    overflow: visible !important;
+  position: relative;
+}
+
+.swiper-button-next:after {
+  position: absolute;
+  right: 19px;
+}
+
+.swiper-button-prev:after {
+  position: absolute;
+  left: 19px;
+}
+
+/* Wrapper must allow overflow so arrows are visible */
+.position-relative {
+  overflow: visible !important;
 }
 
 /* Style the arrow buttons (your design spec) */
 .swiper-button-next,
 .swiper-button-prev {
-    color: var(--jd-primary-dark);
-    background: white;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
+  color: var(--jd-primary-dark);
+  background: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 20;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 20;
 }
 
 /* Move arrows OUTSIDE the Swiper container */
 .swiper-button-prev {
-    left: -65px;      /* adjust to your liking */
+  left: -65px;
+  /* adjust to your liking */
 }
 
 .swiper-button-next {
-    right: -65px;     /* adjust to your liking */
+  right: -65px;
+  /* adjust to your liking */
 }
 
 /* Arrow icon inside the circle */
 .swiper-button-prev::after,
 .swiper-button-next::after {
-    font-size: 24px;
+  font-size: 24px;
 }
