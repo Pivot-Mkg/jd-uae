@@ -109,7 +109,7 @@ html {
 }
 
 #navbarNav {
-  margin-right: 50px;
+  /* margin-right: 50px; */
 }
 
 .nav-link {
@@ -1649,6 +1649,12 @@ html {
   z-index: 2;
   transition: transform 0.35s ease-in-out, box-shadow 0.3s ease;
   will-change: transform;
+  padding: 0 3rem;
+}
+
+#stickyNavbarContainer {
+  padding: 0 3rem;
+  /* occupies no space by default */
 }
 
 /* Slide original navbar up when scrolling down */
@@ -1754,6 +1760,10 @@ html {
     opacity: 1;
     transform: translateY(0) !important;
     /* slide down smoothly */
+  }
+
+  #mainNavbar {
+    padding: 0;
   }
 
 }
