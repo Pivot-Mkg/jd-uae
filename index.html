@@ -69,7 +69,7 @@
         @media only screen and (max-width:1024px) {
             #teamCarousel {
                 width: 100%;
-                height: auto;
+                height: 90%;
                 border-radius: 20px;
             }
         }
@@ -80,7 +80,19 @@
             transform: translate3d(0px, 0, 0);
             margin-bottom: 15px;
         }
+
+        a {
+    color: rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));
+    text-decoration: none;
+}
+
+
+ .banner .swiper-pagination-bullets.swiper-pagination-horizontal{
+ bottom: 28px;
+}
     </style>
+    
+    
 </head>
 
 <body>
@@ -200,7 +212,7 @@
 
             </div>
             <!-- Add pagination -->
-            <div class="swiper-pagination"></div>
+            <div class="swiper-pagination home-banner-dots"></div>
             <!-- Add navigation buttons -->
             <!-- <div class="swiper-button-next"></div>
             <div class="swiper-button-prev"></div> -->
@@ -941,7 +953,7 @@ background: linear-gradient(
             </div>
         </div>
     </section>
-    <!-- End Insights & Perspectives Section -->w
+    <!-- End Insights & Perspectives Section -->
 
 
     <!-- Call to Action Section -->
@@ -1205,5 +1217,32 @@ background: linear-gradient(
     </script>
 
 </body>
+
+<script>
+  function equalizeTeamSlides() {
+    const slides = document.querySelectorAll('#teamCarousel .team-slide');
+    if (!slides.length) return;
+
+    // Reset heights first (for resize)
+    slides.forEach(slide => {
+      slide.style.height = 'auto';
+    });
+
+    let maxHeight = 0;
+
+    slides.forEach(slide => {
+      const h = slide.offsetHeight;
+      if (h > maxHeight) maxHeight = h;
+    });
+
+    // Apply max height to all slides
+    slides.forEach(slide => {
+      slide.style.height = maxHeight + 'px';
+    });
+  }
+
+  window.addEventListener('load', equalizeTeamSlides);
+  window.addEventListener('resize', equalizeTeamSlides);
+</script>
 
 </html>
