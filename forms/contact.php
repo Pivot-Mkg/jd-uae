@@ -21,7 +21,8 @@ $mailConfig = [
     'password' => getenv('JD_SMTP_PASSWORD') ?: 'idui ahbd gsxx jtwu', // Gmail App Password
     'from_email' => 'jdme.website.contact@gmail.com',
     'from_name' => 'James Douglas Website',
-    'notification_email' => 'aakash@pivotmkg.com',
+    'notification_email' => 'enquiries@jamesdouglas.ae',
+    'cc_email' => 'aakash@pivotmkg.com',
 ];
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
@@ -109,6 +110,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $mailer->CharSet = 'UTF-8';
             $mailer->setFrom($mailConfig['from_email'], $mailConfig['from_name']);
             $mailer->addAddress($mailConfig['notification_email']);
+            $mailer->addCC($mailConfig['cc_email']);
             $mailer->addReplyTo($email, $fullName);
             $mailer->Subject = $subject;
             $mailer->isHTML(true);
