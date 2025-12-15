@@ -362,6 +362,14 @@ html {
   transition: all 0.5s ease-in-out;
 }
 
+.btn-warning-custom-oppo {
+  color:var(--jd-warning) !important;
+  background-color: #fff !important;
+  border-color:  var(--jd-warning) !important;
+  white-space: nowrap;
+  transition: all 0.5s ease-in-out;
+}
+
 /* .btn-warning-custom:hover {
   filter: brightness(90%);
   color: #fff;
@@ -1005,10 +1013,10 @@ html {
 }
 
 .ema-logo-overlay {
-  position: absolute;
-  top: 50%;
-  right: -65px;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 40%;
+    right: 28%;
+    transform: translate(-50%, -50%);
 }
 
 .ema-logo-card {
@@ -1090,6 +1098,11 @@ html {
 
 .legacy-cta {
   margin-top: 30px;
+}
+
+.legacy-cta-wrapper{
+  display: flex;
+  gap: 16px;
 }
 
 /* Leadership Section */
@@ -1772,6 +1785,14 @@ html {
   color: #ff9900 !important;
   background: #fff !important;
   border: 1px solid #ff9900 !important;
+  white-space: nowrap !important;
+  /* transform: translateY(-4px);  */
+}
+
+.btn-warning-custom-oppo:hover {
+  color:#fff !important;
+  background:  #ff9900 !important;
+  border: 1px solid #fff !important;
   white-space: nowrap !important;
   /* transform: translateY(-4px);  */
 }
