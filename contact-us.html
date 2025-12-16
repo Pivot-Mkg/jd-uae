@@ -400,6 +400,8 @@
 
     <!-- Contact Form JavaScript -->
     <script>
+       
+
         document.getElementById('contactForm').addEventListener('submit', function (e) {
             e.preventDefault();
 
@@ -423,11 +425,20 @@
                     messageDiv.classList.remove('d-none');
                     console.log("thank you page url", data.redirect)
                     this.reset();
-                    
+
+                  
                     // Redirect if specified
                     if (data.redirect) {
                         setTimeout(() => {
-                            window.location.href = data.redirect;
+                            // window.location.href = data.redirect;
+
+                            // Example- current: https://sandbox.pivotmkg.com/james-douglas-UAE/contact-us.html
+                            const url = new URL(window.location.href);
+                            // replace last part (contact-us.html) with thank-you.html
+                            url.pathname = url.pathname.replace(/[^/]*$/, "thank-you.html");
+                            // result: https://sandbox.pivotmkg.com/james-douglas-UAE/thank-you.html
+                            console.log(url)
+                            window.location.href = url.toString();
                         }, 2000);
                     }
                 } else {
