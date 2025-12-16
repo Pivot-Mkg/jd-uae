@@ -127,7 +127,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo json_encode([
                 'success' => true,
                 'message' => 'Thank you for your message! We will get back to you soon.',
-                'redirect' => '../thank-you.html'
+                'redirect' => './thank-you.html'
             ]);
         } catch (Exception $e) {
             $errorDetail = isset($mailer) ? $mailer->ErrorInfo : $e->getMessage();
