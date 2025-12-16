@@ -123,12 +123,14 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             }
 
             $mailer->send();
+              header('Location: ../thank-you.html');
+            exit();
 
-            echo json_encode([
-                'success' => true,
-                'message' => 'Thank you for your message! We will get back to you soon.',
-                'redirect' => './thank-you.html'
-            ]);
+            // echo json_encode([
+            //     'success' => true,
+            //     'message' => 'Thank you for your message! We will get back to you soon.',
+            //     'redirect' => '../thank-you.html'
+            // ]);
         } catch (Exception $e) {
             $errorDetail = isset($mailer) ? $mailer->ErrorInfo : $e->getMessage();
             http_response_code(500);
